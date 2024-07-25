@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="90l-Yt-Hbh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A018CYM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Kwn-j3-1IG">
+                                <rect key="frame" x="77" y="149" width="239" height="316"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 날씨는?? 🤔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wC-Hz-dfk">
+                                        <rect key="frame" x="14.333333333333329" y="0.0" width="210.66666666666669" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArL-ci-67o">
+                                        <rect key="frame" x="0.0" y="59" width="239" height="157"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="현재 온도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-N5-XmT">
+                                        <rect key="frame" x="73.666666666666657" y="239" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-pF-mwn">
+                                        <rect key="frame" x="7.3333333333333286" y="292" width="224.33333333333337" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최고 온도" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-7Y-FN7">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최저온도" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSm-t2-dWP">
+                                                <rect key="frame" x="150.66666666666669" y="0.0" width="73.666666666666686" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.66751267969999994" green="0.82755388460000001" blue="0.86078912019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Kwn-j3-1IG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XZu-3a-Vgo"/>
+                            <constraint firstItem="Kwn-j3-1IG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ega-Oq-uYx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="sun.min" catalog="system" selectedImage="sun.min" id="1eK-Pz-9jP"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="ArL-ci-67o" id="L5W-84-cFY"/>
+                        <outlet property="maxTempLabel" destination="zeb-7Y-FN7" id="evV-Wp-fVv"/>
+                        <outlet property="minTempLabel" destination="CSm-t2-dWP" id="WTC-Es-oad"/>
+                        <outlet property="tempLabel" destination="h3c-N5-XmT" id="ycy-Eo-qgH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985.49618320610682" y="3.5211267605633805"/>
+        </scene>
+        <!--Air-->
+        <scene sceneID="fIL-uc-VbE">
+            <objects>
+                <viewController id="i2i-DI-Laq" customClass="AirViewController" customModule="A018CYM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xud-Oc-NRM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVP-sr-ipe">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ic-YH-lLO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6ic-YH-lLO" firstAttribute="bottom" secondItem="KVP-sr-ipe" secondAttribute="bottom" id="F7H-mz-V9I"/>
+                            <constraint firstItem="KVP-sr-ipe" firstAttribute="leading" secondItem="6ic-YH-lLO" secondAttribute="leading" id="RdM-XN-clZ"/>
+                            <constraint firstItem="KVP-sr-ipe" firstAttribute="top" secondItem="6ic-YH-lLO" secondAttribute="top" id="duo-mP-gFi"/>
+                            <constraint firstItem="6ic-YH-lLO" firstAttribute="trailing" secondItem="KVP-sr-ipe" secondAttribute="trailing" id="qix-Ih-GLQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Air" image="aqi.medium" catalog="system" id="L39-sw-kNp"/>
+                    <connections>
+                        <outlet property="webView" destination="KVP-sr-ipe" id="Hmg-fx-FCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISV-hy-bVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="744"/>
+        </scene>
+        <!--Mask-->
+        <scene sceneID="Raq-lI-Y4f">
+            <objects>
+                <viewController id="wTP-eo-GbP" customClass="MaskViewController" customModule="A018CYM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23z-sz-3EU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPU-vC-W5J">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Yb-jR-QBd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Yb-jR-QBd" firstAttribute="bottom" secondItem="vPU-vC-W5J" secondAttribute="bottom" id="TPJ-Sy-Nvr"/>
+                            <constraint firstItem="6Yb-jR-QBd" firstAttribute="trailing" secondItem="vPU-vC-W5J" secondAttribute="trailing" id="l6s-98-TRG"/>
+                            <constraint firstItem="vPU-vC-W5J" firstAttribute="top" secondItem="6Yb-jR-QBd" secondAttribute="top" id="n2q-sp-ZES"/>
+                            <constraint firstItem="vPU-vC-W5J" firstAttribute="leading" secondItem="6Yb-jR-QBd" secondAttribute="leading" id="x5g-lP-9rm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mask" image="facemask" catalog="system" id="nwg-Ve-heq"/>
+                    <connections>
+                        <outlet property="MaskView" destination="vPU-vC-W5J" id="V3p-LR-Shp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LwG-Dz-mRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="745"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xh4-wv-XaD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="90l-Yt-Hbh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LAr-uF-q83">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R5S-S9-rBN"/>
+                        <segue destination="i2i-DI-Laq" kind="relationship" relationship="viewControllers" id="Mht-JI-DO8"/>
+                        <segue destination="wTP-eo-GbP" kind="relationship" relationship="viewControllers" id="b4c-hA-3aB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahJ-dp-u3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.778625954198468" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aqi.medium" catalog="system" width="128" height="120"/>
+        <image name="facemask" catalog="system" width="128" height="67"/>
+        <image name="sun.min" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
